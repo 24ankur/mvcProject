@@ -1,0 +1,62 @@
+C:\Users\shikharkumar\Desktop\LayeredProject\BookEventsManagement\SharedLogic\bin\Debug\SharedLogic.dll
+C:\Users\shikharkumar\Desktop\LayeredProject\BookEventsManagement\SharedLogic\bin\Debug\SharedLogic.pdb
+C:\Users\shikharkumar\Desktop\LayeredProject\BookEventsManagement\SharedLogic\obj\Debug\SharedLogic.csproj.CoreCompileInputs.cache
+C:\Users\shikharkumar\Desktop\LayeredProject\BookEventsManagement\SharedLogic\obj\Debug\SharedLogic.dll
+C:\Users\shikharkumar\Desktop\LayeredProject\BookEventsManagement\SharedLogic\obj\Debug\SharedLogic.pdb
+C:\Users\shikharkumar\Desktop\LayeredProject\BookEventsManagement\SharedLogic\obj\Debug\SharedLogic.csprojAssemblyReference.cache
+C:\Users\shikharkumar\Desktop\LayeredProjectInitial\LayeredProject\BookEventsManagement\SharedLogic\bin\Debug\SharedLogic.dll
+C:\Users\shikharkumar\Desktop\LayeredProjectInitial\LayeredProject\BookEventsManagement\SharedLogic\bin\Debug\SharedLogic.pdb
+C:\Users\shikharkumar\Desktop\LayeredProjectInitial\LayeredProject\BookEventsManagement\SharedLogic\obj\Debug\SharedLogic.csproj.CoreCompileInputs.cache
+C:\Users\shikharkumar\Desktop\LayeredProjectInitial\LayeredProject\BookEventsManagement\SharedLogic\obj\Debug\SharedLogic.dll
+C:\Users\shikharkumar\Desktop\LayeredProjectInitial\LayeredProject\BookEventsManagement\SharedLogic\obj\Debug\SharedLogic.pdb
+C:\Users\shikharkumar\Desktop\LayeredProjectInitial\LayeredProject\BookEventsManagement\SharedLogic\obj\Debug\SharedLogic.csprojAssemblyReference.cache
+C:\Users\shikharkumar\Desktop\LayeredProjectInitial\LayeredProject\BookEventsManagement\SharedLogic\bin\Debug\DataAccess.dll
+C:\Users\shikharkumar\Desktop\LayeredProjectInitial\LayeredProject\BookEventsManagement\SharedLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\shikharkumar\Desktop\LayeredProjectInitial\LayeredProject\BookEventsManagement\SharedLogic\bin\Debug\EntityFramework.dll
+C:\Users\shikharkumar\Desktop\LayeredProjectInitial\LayeredProject\BookEventsManagement\SharedLogic\bin\Debug\DataAccess.pdb
+C:\Users\shikharkumar\Desktop\LayeredProjectInitial\LayeredProject\BookEventsManagement\SharedLogic\bin\Debug\DataAccess.dll.config
+C:\Users\shikharkumar\Desktop\LayeredProjectInitial\LayeredProject\BookEventsManagement\SharedLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\shikharkumar\Desktop\LayeredProjectInitial\LayeredProject\BookEventsManagement\SharedLogic\bin\Debug\EntityFramework.xml
+C:\Users\shikharkumar\Desktop\LayeredProjectInitial\LayeredProject\BookEventsManagement\SharedLogic\obj\Debug\SharedLogic.csproj.CopyComplete
+C:\Users\chanchalgoel\Downloads\BookEventsManagement\BookEventsManagement\SharedLogic\bin\Debug\SharedLogic.dll
+C:\Users\chanchalgoel\Downloads\BookEventsManagement\BookEventsManagement\SharedLogic\bin\Debug\SharedLogic.pdb
+C:\Users\chanchalgoel\Downloads\BookEventsManagement\BookEventsManagement\SharedLogic\bin\Debug\DataAccess.dll
+C:\Users\chanchalgoel\Downloads\BookEventsManagement\BookEventsManagement\SharedLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\chanchalgoel\Downloads\BookEventsManagement\BookEventsManagement\SharedLogic\bin\Debug\EntityFramework.dll
+C:\Users\chanchalgoel\Downloads\BookEventsManagement\BookEventsManagement\SharedLogic\bin\Debug\DataAccess.pdb
+C:\Users\chanchalgoel\Downloads\BookEventsManagement\BookEventsManagement\SharedLogic\bin\Debug\DataAccess.dll.config
+C:\Users\chanchalgoel\Downloads\BookEventsManagement\BookEventsManagement\SharedLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\chanchalgoel\Downloads\BookEventsManagement\BookEventsManagement\SharedLogic\bin\Debug\EntityFramework.xml
+C:\Users\chanchalgoel\Downloads\BookEventsManagement\BookEventsManagement\SharedLogic\obj\Debug\SharedLogic.csprojAssemblyReference.cache
+C:\Users\chanchalgoel\Downloads\BookEventsManagement\BookEventsManagement\SharedLogic\obj\Debug\SharedLogic.csproj.CoreCompileInputs.cache
+C:\Users\chanchalgoel\Downloads\BookEventsManagement\BookEventsManagement\SharedLogic\obj\Debug\SharedLogic.csproj.CopyComplete
+C:\Users\chanchalgoel\Downloads\BookEventsManagement\BookEventsManagement\SharedLogic\obj\Debug\SharedLogic.dll
+C:\Users\chanchalgoel\Downloads\BookEventsManagement\BookEventsManagement\SharedLogic\obj\Debug\SharedLogic.pdb
+C:\Users\ankurswami\Downloads\BookEventsManagement (1)\BookEventsManagement\SharedLogic\bin\Debug\SharedLogic.dll
+C:\Users\ankurswami\Downloads\BookEventsManagement (1)\BookEventsManagement\SharedLogic\bin\Debug\SharedLogic.pdb
+C:\Users\ankurswami\Downloads\BookEventsManagement (1)\BookEventsManagement\SharedLogic\bin\Debug\DataAccess.dll
+C:\Users\ankurswami\Downloads\BookEventsManagement (1)\BookEventsManagement\SharedLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ankurswami\Downloads\BookEventsManagement (1)\BookEventsManagement\SharedLogic\bin\Debug\EntityFramework.dll
+C:\Users\ankurswami\Downloads\BookEventsManagement (1)\BookEventsManagement\SharedLogic\bin\Debug\DataAccess.pdb
+C:\Users\ankurswami\Downloads\BookEventsManagement (1)\BookEventsManagement\SharedLogic\bin\Debug\DataAccess.dll.config
+C:\Users\ankurswami\Downloads\BookEventsManagement (1)\BookEventsManagement\SharedLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ankurswami\Downloads\BookEventsManagement (1)\BookEventsManagement\SharedLogic\bin\Debug\EntityFramework.xml
+C:\Users\ankurswami\Downloads\BookEventsManagement (1)\BookEventsManagement\SharedLogic\obj\Debug\SharedLogic.csproj.AssemblyReference.cache
+C:\Users\ankurswami\Downloads\BookEventsManagement (1)\BookEventsManagement\SharedLogic\obj\Debug\SharedLogic.csproj.CoreCompileInputs.cache
+C:\Users\ankurswami\Downloads\BookEventsManagement (1)\BookEventsManagement\SharedLogic\obj\Debug\SharedLogic.csproj.CopyComplete
+C:\Users\ankurswami\Downloads\BookEventsManagement (1)\BookEventsManagement\SharedLogic\obj\Debug\SharedLogic.dll
+C:\Users\ankurswami\Downloads\BookEventsManagement (1)\BookEventsManagement\SharedLogic\obj\Debug\SharedLogic.pdb
+C:\Users\ankurswami\Downloads\bookeventmanagement-master\bookeventmanagement-master\SharedLogic\bin\Debug\SharedLogic.dll
+C:\Users\ankurswami\Downloads\bookeventmanagement-master\bookeventmanagement-master\SharedLogic\bin\Debug\SharedLogic.pdb
+C:\Users\ankurswami\Downloads\bookeventmanagement-master\bookeventmanagement-master\SharedLogic\bin\Debug\DataAccess.dll
+C:\Users\ankurswami\Downloads\bookeventmanagement-master\bookeventmanagement-master\SharedLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ankurswami\Downloads\bookeventmanagement-master\bookeventmanagement-master\SharedLogic\bin\Debug\EntityFramework.dll
+C:\Users\ankurswami\Downloads\bookeventmanagement-master\bookeventmanagement-master\SharedLogic\bin\Debug\DataAccess.pdb
+C:\Users\ankurswami\Downloads\bookeventmanagement-master\bookeventmanagement-master\SharedLogic\bin\Debug\DataAccess.dll.config
+C:\Users\ankurswami\Downloads\bookeventmanagement-master\bookeventmanagement-master\SharedLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ankurswami\Downloads\bookeventmanagement-master\bookeventmanagement-master\SharedLogic\bin\Debug\EntityFramework.xml
+C:\Users\ankurswami\Downloads\bookeventmanagement-master\bookeventmanagement-master\SharedLogic\obj\Debug\SharedLogic.csproj.AssemblyReference.cache
+C:\Users\ankurswami\Downloads\bookeventmanagement-master\bookeventmanagement-master\SharedLogic\obj\Debug\SharedLogic.csproj.CoreCompileInputs.cache
+C:\Users\ankurswami\Downloads\bookeventmanagement-master\bookeventmanagement-master\SharedLogic\obj\Debug\SharedLogic.csproj.CopyComplete
+C:\Users\ankurswami\Downloads\bookeventmanagement-master\bookeventmanagement-master\SharedLogic\obj\Debug\SharedLogic.dll
+C:\Users\ankurswami\Downloads\bookeventmanagement-master\bookeventmanagement-master\SharedLogic\obj\Debug\SharedLogic.pdb

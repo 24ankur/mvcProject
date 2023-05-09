@@ -1,0 +1,25 @@
+﻿@model IEnumerable<SharedLogic.ViewModels.EventViewModel>
+
+@{
+    ViewBag.Title = "Invitations";
+}
+
+<h2>You are Invited to all these Events</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TitleOfTheBook)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.ActionLink(item.TitleOfTheBook, "Details", new { id = item.EventId })
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,77 @@
+﻿@model IEnumerable<SharedLogic.ViewModels.EventViewModel>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<head>
+    <style>
+        .EventList a:hover{
+            color:black;
+            background-color:darkgray;
+            border-radius:2px;
+            padding:2px;
+            text-decoration-line:none;
+        }
+
+        .fun-fact:hover {
+            background-color: darkgray;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .Home-Event:hover {
+            background-color: darkgray;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            display:inline-block;
+        }
+    </style>
+</head>
+
+<div class="jumbotron">
+    <h1 class="Banner-Text" style="text-align:center;color:maroon;font-variant:small-caps;
+            font-size:50px;cursor:pointer;border-radius:10px;
+            background-color:lightgrey;
+            box-shadow: 2px 2px 2px;">Book Events Management Portal</h1>
+    <hr />
+    <h2 style="text-align:center; color:white ; Background:dimgray; padding :10px ; border-radius:22px;margin-top:50px;font-variant:small-caps">
+        A Web application to manage book-reading events, 
+        allowing users to manage events across the World !
+    </h2>
+    <hr />
+    <p style="text-align:center; font-variant:small-caps;background-color:lightgray;border-radius:5px;padding:10px">
+        <text class="fun-fact" style="font-size:30px; font-weight:bold;color:maroon;">Fun Fact</text> <br>
+    A book reading event is where book lovers come together for a community reading of their favourite book. 
+    One or more readers read the book loudly and optionally people even play different 
+    roles from the book !</p>
+</div>
+
+<div class="row" style="background-color:lightgray;border-radius:10px">
+    <div class="col-md-6">
+        <h2 class="Home-Event" style="padding-top:0px; font-variant:small-caps;margin-bottom:20px">Past Events</h2>
+        <div>
+            @foreach (var currentEvent in Model)
+            {
+                if (currentEvent.Date < DateTime.Now)
+                {
+                    <p class="EventList" style="display:block;font-size:18px;font-variant:small-caps">@Html.ActionLink(currentEvent.TitleOfTheBook, "Details","Home",new { id = currentEvent.EventId },null)</p>
+                }
+            }
+        </div>
+
+    </div>
+
+    <div class="col-md-6">
+        <h2 class="Home-Event" style="padding-top:0px; font-variant:small-caps;margin-bottom:20px">Future Events</h2>
+        <div>
+            @foreach (var currentEvent in Model)
+            {
+                if (currentEvent.Date >= DateTime.Now)
+                {
+                    <p class="EventList" style="display:block;font-size:18px;font-variant:small-caps">@Html.ActionLink(currentEvent.TitleOfTheBook, "Details" ,"Home", new { id = currentEvent.EventId },null)</p>
+                }
+            }
+        </div>
+    </div>
+</div>

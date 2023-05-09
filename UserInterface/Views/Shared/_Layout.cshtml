@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <style>
+        body > div.navbar.navbar-inverse.navbar-fixed-top > div > div.navbar-collapse.collapse > ul > li :hover {
+            background-color: rgb(97, 45, 8);
+            color: antiquewhite;
+        }
+
+        body > div.navbar.navbar-inverse.navbar-fixed-top > div > div.navbar-header :hover {
+            background-color:  rgb(53, 24, 4);
+            color: antiquewhite;
+        }
+
+        body > div.container.body-content > div.row > div > div > p > a{
+            color:red;
+        }
+
+    </style>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+
+
+                    @if (User.Identity.Name == "myadmin@bookevents.com" && User.Identity.IsAuthenticated)
+                    {
+                        <li>@Html.ActionLink("All Events", "AllEvents", "Home")</li>
+                    }
+                    
+                    else if (User.Identity.IsAuthenticated)
+                    {
+                        <li>@Html.ActionLink("Create Event", "Create", "Event")</li>
+                        <li>@Html.ActionLink("My Events", "MyEvents", "Event")</li>
+                        <li>@Html.ActionLink("Invitations", "Invitations", "Event")</li>
+                    }
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <li>@Html.ActionLink("Register", "SignUp", "Account")</li>
+                        <li>@Html.ActionLink("Login", "Login", "Account")</li>
+                    }
+                    else
+                    {
+                        <li>@Html.ActionLink("Hello-" + User.Identity.Name, "Contact", "Home")</li>
+                        <li>@Html.ActionLink("Sign Out", "SignOut", "Account")</li>
+                    }
+                    <li>@Html.ActionLink("Support", "Support", "Home")</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Nagarro Book Event Management Assignment</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,149 @@
+﻿@model SharedLogic.ViewModels.DetailsViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details of @Html.DisplayFor(model => model.Events.TitleOfTheBook)</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Events.TitleOfTheBook)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Events.TitleOfTheBook)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Events.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Events.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Events.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Events.Location)
+        </dd>
+        @if (Model.Events.StartTime != null)
+        {
+            <dt>
+                @Html.DisplayNameFor(model => model.Events.StartTime)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Events.StartTime)
+            </dd>
+        }
+        @if (Model.Events.DurationInHours != null)
+        {
+            <dt>
+                @Html.DisplayNameFor(model => model.Events.DurationInHours)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Events.DurationInHours)
+            </dd>
+        }
+
+
+        @if (Model.Events.Description != null)
+        {
+            <dt>
+                @Html.DisplayNameFor(model => model.Events.Description)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Events.Description)
+            </dd>
+        }
+
+        @if (Model.Events.OtherDetails != null)
+        {
+            <dt>
+                @Html.DisplayNameFor(model => model.Events.OtherDetails)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Events.OtherDetails)
+            </dd>
+        }
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Events.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Events.Type)
+        </dd>
+
+        @if (Model.Events.InviteByEmails != null)
+        {
+            <dt>
+                Total Invitations
+            </dt>
+
+            <dd>
+                @Model.Events.InviteByEmails.Replace(" ", "").Split(',').Count()
+            </dd>
+        }
+    </dl>
+
+    <div class=" card card-outline-secondary my-4">
+        <div class="card-header">
+            <br />
+            <h3 style="font-weight: bold">Comments</h3>
+            <hr />
+        </div>
+        <div class="card-body">
+            @if (Model.comments != null && Model.comments.Count() > 0)
+            {
+                foreach (var comment in Model.comments)
+                {
+                    <p>@comment.Text  [@comment.Email.Remove(comment.Email.Length - 4, 4) on @comment.TimeStamp]</p>
+                    <br />
+                }
+            }
+        </div>
+    </div>
+
+
+    <form id="CommentForm">
+        <input type="hidden" name="EventID" value="@Model.Events.EventId" />
+        <div class="form-group">
+            <label for="CommentTextArea"> CommentArea</label>
+            <textarea class="form-control" id="CommentTextArea" name="Text" rows="3"></textarea>
+        </div>
+        <button class="btn btn-success" id="btnComment" type="button"> Leave Comment</button>
+    </form>
+</div>
+
+
+@section Scripts
+{
+    <script type="text/javascript">
+    $("#btnComment").click(function () {
+        $.ajax({
+            url: "@Url.Action("LeaveComment", "Comment")",
+            type: "post",
+            data: $("#CommentForm").serialize()
+        }).done(function (response) {
+            if (response.Success) {
+                window.location.reload();
+            }
+            else {
+                swal("Error!", response.Message, "error");
+            }
+        }).fail(function () {
+            swal("Error!", "Error Occured Please try again later!!", "error");
+        });
+    });
+    </script>
+}

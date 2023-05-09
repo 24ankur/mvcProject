@@ -1,0 +1,44 @@
+﻿@model IEnumerable<SharedLogic.ViewModels.EventViewModel>
+
+@{
+    ViewBag.Title = "MyEvents";
+}
+
+<h2>Your Events are Displayed Here</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TitleOfTheBook)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink(item.TitleOfTheBook, "Details", new { id = item.EventId })
+        </td>
+
+        @if (item.Date > DateTime.Now)
+        {
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.EventId , invitedto = item.InviteByEmails })
+                |
+                @Html.ActionLink("Delete", "Delete", new { id = item.EventId })
+            </td>
+        }
+        else
+        {
+            <td>
+                Event Expired |
+                @Html.ActionLink("Delete", "Delete", new { id = item.EventId })
+            </td>
+        }
+
+    </tr>
+}
+
+</table>

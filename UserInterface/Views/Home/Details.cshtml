@@ -1,0 +1,113 @@
+﻿@model SharedLogic.ViewModels.EventViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details of @Html.DisplayFor(model => model.TitleOfTheBook)</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TitleOfTheBook)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TitleOfTheBook)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+
+        @if (Model.StartTime != null)
+        {
+
+            <dt>
+                @Html.DisplayNameFor(model => model.StartTime)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.StartTime)
+            </dd>
+
+        }
+
+        @if (Model.DurationInHours != null)
+        {
+            <dt>
+                @Html.DisplayNameFor(model => model.DurationInHours)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DurationInHours)
+            </dd>
+        }
+
+        @if (Model.Description != null)
+        {
+            <dt>
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+        }
+
+        @if (Model.OtherDetails != null)
+        {
+            <dt>
+                @Html.DisplayNameFor(model => model.OtherDetails)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.OtherDetails)
+            </dd>
+        }
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        @if (Model.InviteByEmails != null)
+        {
+            <dt>
+                Total Invitations
+            </dt>
+
+            <dd>
+                @Model.InviteByEmails.Replace(" ", "").Split(',').Count()
+            </dd>
+        }
+    </dl>
+</div>
+
+    <form id="CommentForm" action="~/Account/Login">
+        <input type="hidden" name="EventID" value="@Model.EventId" />
+        <div class="form-group">
+            <label for="CommentTextArea"> CommentArea</label>
+            <textarea class="form-control" id="CommentTextArea" name="Text" rows="3"></textarea>
+        </div>
+        <button class="btn btn-success" id="btnComment" type="submit">Leave Comment</button>
+    </form>
+
+ 
+

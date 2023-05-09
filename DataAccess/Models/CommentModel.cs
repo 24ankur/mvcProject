@@ -12,6 +12,8 @@ namespace DataAccess.Models
         //somechangesI want to check in my repo on git
         public int Id { get; set; }
         public int EventId { get; set; }
+
+        //will create new branch then i will commit this code
         public string Text { get; set; }
         public string Email { get; set; }
         public DateTime timeStamp { get; set; }

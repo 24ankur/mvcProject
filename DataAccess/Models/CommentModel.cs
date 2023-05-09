@@ -9,6 +9,7 @@ namespace DataAccess.Models
 {
     public class CommentModel
     {
+        //somechangesI want to check in my repo on git
         public int Id { get; set; }
         public int EventId { get; set; }
         public string Text { get; set; }
